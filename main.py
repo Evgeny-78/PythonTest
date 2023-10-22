@@ -1,16 +1,26 @@
-# This is a sample Python script.
+# работа со списками и кортежами ---------------------------
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# spisok = []
+# print(type(spisok))
+# spisok.append('stroka')
+# spisok.append(5)
+# spisok.append(('korteg', 56, True))
+# print(spisok)
+# print(len(spisok))
+# spisok.extend(['new list', 23423, False, None])
+# print(spisok)
+#
+# korteg = tuple(spisok)
+# print(korteg)
+# korteg = 1, 4, 'asdas', 3.23, True
+# print(korteg)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# работа со словарями ----------------------------------------
+NewDict = {2: 'qwqw', 'one': 1, 'two': 'two', 'key1': 'value1'}
+print(NewDict)
+NewDict2 = dict.fromkeys(['key1', 'key2', 'key3'], ['value1', 'value2', 'value3'])
+print(NewDict2)
+print(NewDict.items())
+NewDict['key2'] = 'value2'
+print(NewDict)
+print('key2' in NewDict)
